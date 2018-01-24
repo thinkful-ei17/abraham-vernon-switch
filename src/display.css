@@ -1,3 +1,8 @@
+.display-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .display-message p{
   font-weight: bolder;
   font-size: 100px;

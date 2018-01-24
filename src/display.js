@@ -25,19 +25,21 @@ export default class Display extends React.Component{
 
     }
 
-    changeEverything(message, color) {
+    changeFont(font){
+        this.setState({font: font});
+    }
+
+    changeEverything(message, color, font) {
         console.log('this ran! - everythingFunc');
         this.changeMessage(message);
         this.changeBackgroundColor(color);
-
+        this.changeFont(font);
     }
 
     render(){
         return (<div className="display-message">
-            <p>{this.state.message}</p>
-            <div className="switcher">
-                <Item changeFunc={(message, color) => this.changeEverything(message, color)} />
-            </div>
+            <p style={{fontFamily: this.state.font}}>{this.state.message}</p>
+            <Item changeFunc={(message, color, font) => this.changeEverything(message, color, font)} />
         </div>
         );
     }

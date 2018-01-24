@@ -1,5 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Indie+Flower|Kavivanar|Risque|Sedgwick+Ave|Supermercado+One|VT323');
+
 .font-name {
-  font-size: 1.5vw;
+  font-size: 1.5em;
   position: absolute;
   top: 10px;
   left: 20px;
@@ -7,6 +10,6 @@
 
 .font-preview{
   position: absolute;
-  font-size: 10vh;
+  font-size: 3.5em;
   bottom: 0;
 }

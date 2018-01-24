@@ -1,3 +1,7 @@
+* {
+  display: border-box;
+}
+
 body {
   background-color: rgb(255, 232, 113);
 }
