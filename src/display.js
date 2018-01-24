@@ -8,13 +8,21 @@ export default class Display extends React.Component{
     this.state = {
       message: 'Hello World!'
     };
+
+
+  }
+
+  changeMessage(message) {
+    console.log('Changed Message!');
+    this.setState({message: message});
+
   }
   render(){
     return (<div className="display-message">
       <p>{this.state.message}</p>
-      <div className="swticher"> 
-        <Item />
-      </div>        
+      <div className="switcher">
+        <Item changeMessageFunc={(message) => this.changeMessage(message)} />
+      </div>
     </div>
     );
   }

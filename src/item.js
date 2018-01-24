@@ -19,7 +19,7 @@ export default class Item extends React.Component {
     };
   }
   render() {
-    const fonts = this.state.fonts.map(f => <Font message={f.name} />);
+    const fonts = this.state.fonts.map(f => <Font onFontClick={(message) => this.props.changeMessageFunc(message)} message={f.name} />);
     return (
       <div className="item-container">
         <ul>
