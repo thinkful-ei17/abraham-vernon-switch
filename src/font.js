@@ -1,4 +1,5 @@
 import React from 'react';
+import './font.css';
 
 export default class Font extends React.Component {
   constructor(props){
@@ -7,10 +8,10 @@ export default class Font extends React.Component {
 
   render() {
     return (
-      <div>
-        <span>{this.props.message}</span>
-        <span>Aa</span>
-      </div>
+      <li>
+        <span className="font-name">{this.props.message}</span>
+        <span className="font-preview">Aa</span>
+      </li>
     );
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import Font from './font';
+import './item.css';
 
 export default class Item extends React.Component {
   constructor(props){
@@ -20,7 +21,7 @@ export default class Item extends React.Component {
   render() {
     const fonts = this.state.fonts.map(f => <Font message={f.name} />);
     return (
-      <div>
+      <div className="item-container">
         <ul>
           {fonts}
         </ul>
