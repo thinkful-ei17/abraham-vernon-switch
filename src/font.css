@@ -1,9 +1,12 @@
-.font-name{
-  font-size: 2vw;
+.font-name {
+  font-size: 1.5vw;
   position: absolute;
   top: 10px;
+  left: 20px;
 }
 
 .font-preview{
+  position: absolute;
   font-size: 10vh;
+  bottom: 0;
 }
