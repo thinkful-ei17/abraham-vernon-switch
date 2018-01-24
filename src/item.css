@@ -5,6 +5,7 @@
 }
 .item-container ul{
   list-style-type: none;
+  text-align: center;
 }
 
 .item-container ul li {
