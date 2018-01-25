@@ -1,15 +1,14 @@
 import React from 'react';
-import './display.css';
+import '../css/display.css';
 import Item from './item';
 
 export default class Display extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            message: 'Hello World!'
+            message: 'Google',
+            font: '\'Indie Flower\', cursive'
         };
-
-
     }
 
 
@@ -37,10 +36,17 @@ export default class Display extends React.Component{
     }
 
     render(){
-        return (<div className="display-message">
-            <p style={{fontFamily: this.state.font}}>{this.state.message}</p>
-            <Item changeFunc={(message, color, font) => this.changeEverything(message, color, font)} />
-        </div>
-        );
+      console.log(...this.state, {});
+
+      return (<div className="display-message">
+          <p style={{fontFamily: this.state.font}}>{this.state.message}</p>
+        {// <Item changeFunc={(message, color, font) => this.changeEverything(message, color, font)} />
+      }
+      </div>
+      );
+        // return (
+        //     <p style={{fontFamily: this.state.font}}>{this.state.message}</p>
+        //
+        // );
     }
 }

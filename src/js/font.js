@@ -1,5 +1,5 @@
 import React from 'react';
-import './font.css';
+import '../css/font.css';
 
 export default class Font extends React.Component {
     constructor(props){

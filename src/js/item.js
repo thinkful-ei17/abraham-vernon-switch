@@ -1,6 +1,6 @@
 import React from 'react';
 import Font from './font';
-import './item.css';
+import '../css/item.css';
 
 export default class Item extends React.Component {
     constructor(props){
